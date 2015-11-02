@@ -1,0 +1,28 @@
+for authentication, follow laravels auth folder
+
+dont create users table by yourself from phpmyadmin
+use migration instead.
+use 
+php artisan migrate 
+and ur users table is created there !
+
+after registration, u will be redirected to the home dir, but it actually not in ur view, so dont panic !! 
+after u register , remember to logout before u register another user.   localhost/auth/logout
+then login to test
+
+
+use route groupiong to authenticate
+
+ ----//   routes.php
+
+Route::group(['namespace' => 'Auth', 'prefix' => 'auth'], function() {
+    Route::get('login', 'AuthController@getLogin');
+    Route::post('login', 'AuthController@postLogin');
+    Route::get('logout', 'AuthController@getLogout');
+	
+	Route::get('register', 'AuthController@getRegister');
+	Route::post('register', 'AuthController@postRegister');
+
+});
+
+
