@@ -1,6 +1,8 @@
 
+
 go through the git-scm book for a clear perceptoin
 https://git-scm.com/book/en/v2
+
 
 chapeter 1-3 is fair enough
 one day u will be the boss and have the ownership of the  server, and make others create pull request to u. so need some basic knowledge of chapter 4
@@ -9,8 +11,11 @@ then before u start a project , see the video by Muzahidul Vai , salute boss :)
 https://www.youtube.com/watch?v=OBCnmcgx4CE
 
 
-after u start working, it may happen that, ur branch is not merged yet. but you have to start working for the nest branch.
+after u start working, it may happen that, ur branch is not merged yet. but you have to start working for the next branch.
 in that case,
+
+
+
 -create a new branch from the old branch that is not yet merged
 -then work there and after ur work is done , just rebase (with - i , in case of multiple commits) with the develop branch
 -then push the new branch into ur origin (git push origin new_branch)
@@ -19,5 +24,7 @@ in that case,
 git no pass word required for git
 
 -A common mistake is cloning using the default (HTTPS) instead of SSH. You can correct this by going to your repository, clicking the ssh button left to the URL field and updating the URL of your origin remote like this:
+
+
 
 -git remote set-url origin git@github.com:username/repo.git
